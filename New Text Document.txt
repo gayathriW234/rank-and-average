@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    string stream;
+    string maths;
+    string bio;
+    int i, mark[3];
+    float sum=0, avg, perc;
+
+        cout << "------USE IN LOWERCASE LETTER-------"<<endl;
+        cout << "Select your stream Bio/Maths : ";
+        cin >> stream;
+        cout << "Your Stream is :"<< stream;
+
+        cout<<"\n Combined Maths / BioScience: ";
+        cin>>mark[1];
+        cout<<"\n Physics : ";
+        cin>>mark[2];
+        cout<<"\n Chemistry : ";
+        cin>>mark[3];
+
+    for(i=0;i<5;i++)
+        {
+        sum=sum+mark[i];
+        }
+    avg = sum/3;
+    perc = (sum/300)*100;
+    cout<<"\nAverage Marks = "<<avg;
+    cout<<"\nPercentage Marks = "<<perc<<"%";
+    cout<<endl;
+
+    avg = sum/3;
+    cout<<"\nYour Grade is Grade = ";
+    if(avg>=75 && avg<100)
+        cout<<"A";
+    else if(avg>=65 && avg<74)
+        cout<<"B";
+    else if(avg=55 && avg<64)
+        cout<<"C";
+    else if(avg>=35 && avg<54)
+        cout<<"S";
+    else if(avg>=0 && avg<34)
+        cout<<"Fail";
+    else
+        cout<<"Invalid!";
+    cout<<endl;
+    return 0;
+}
+
+void myFunction() {
+
+}
